@@ -1,6 +1,6 @@
 # jquery-cityselect
 JQuery-Cityselect By China
-该插件来自网络，本项目对其进行模块化，用例见App.vue
+该插件来自[网络](http://www.bootstrapmb.com/item/9663)，本项目对其进行模块化，用例见App.vue
 ## 截图
 ![](./resource/截图_选择区域_20220601203837.jpg)
 ![](./resource/截图_选择区域_20220601203844.jpg)
