@@ -1,0 +1,62 @@
+{
+  "name": "jquery-cityselect",
+  "version": "1.0.0",
+  "description": "JQuery-Cityselect By China",
+  "private": true,
+  "author": "hsdllcw",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hsdllcw/jquery-cityselect/issues"
+  },
+  "homepage": "https://github.com/hsdllcw/jquery-cityselect#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hsdllcw/jquery-cityselect.git"
+  },
+  "keywords": [
+    "jquery",
+    "city",
+    "select",
+    "China"
+  ],
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "jquery": "^3.6.0",
+    "node-sass": "^4.14.1",
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.12",
+    "@vue/cli-plugin-eslint": "~4.5.12",
+    "@vue/cli-service": "~4.5.12",
+    "@vue/compiler-sfc": "^3.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0",
+    "sass-loader": "^8.0.2"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

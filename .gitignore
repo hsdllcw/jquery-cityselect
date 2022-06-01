@@ -1,0 +1,12 @@
+/target
+*.vscode
+*.project
+*.idea
+*.settings
+*.svn
+*.classpath
+*.test
+*.iml
+#Node
+node_modules/
+dist/
