@@ -1,7 +1,8 @@
 import $ from "jquery";
+import { regionData } from 'element-china-area-data'
 let that = null;
 const cityselect = {
-  data: require('./area.json'),
+  regionData: regionData,
   //获取选择框
   box: null,
   //箭头
@@ -178,8 +179,8 @@ const cityselect = {
     that.list[0].innerHTML = '';
     that.str_province = '';
     //读取JSON文件，获取数据
-    for (var i = 0; i < that.data.length; i++) {
-      that.str_province += "<li class='provinceLi' value=" + i + '>' + that.data[i].name + "</li>";
+    for (var i = 0; i < that.regionData.length; i++) {
+      that.str_province += "<li class='provinceLi' value=" + i + '>' + that.regionData[i].label + "</li>";
     }
     that.list[0].innerHTML = that.str_province;
   },
@@ -192,9 +193,9 @@ const cityselect = {
     that.list[2].innerHTML = '';
     that.str_area = '';
     //读取JSON文件，获取数据
-    var city_data = that.data[that.provinceIndex].city;
+    var city_data = that.regionData[that.provinceIndex].children;
     for (var i = 0; i < city_data.length; i++) {
-      that.str_city += "<li class='cityLi' value=" + i + '>' + city_data[i].name + "</li>";
+      that.str_city += "<li class='cityLi' value=" + i + '>' + city_data[i].label + "</li>";
     }
     that.list[1].innerHTML = that.str_city;
     //点市
@@ -209,9 +210,9 @@ const cityselect = {
     that.list[2].innerHTML = '';
     that.str_area = '';
     //读取JSON文件，获取数据
-    var area_data = that.data[that.provinceIndex].city[that.cityIndex].area;
+    var area_data = that.regionData[that.provinceIndex].children[that.cityIndex].children;
     for (var i = 0; i < area_data.length; i++) {
-      that.str_area += "<li class='areaLi' value=" + i + '>' + area_data[i] + "</li>";
+      that.str_area += "<li class='areaLi' value=" + i + '>' + area_data[i].label + "</li>";
     }
     that.list[2].innerHTML = that.str_area;
     //点市
